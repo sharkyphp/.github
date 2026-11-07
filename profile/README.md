@@ -18,22 +18,22 @@ This organization (`sharkyphp`) hosts the **read-only, split distribution** of t
 
 | Repository | Role |
 |---|---|
-| **[`bytesharky/sharkyphp-v2`](https://github.com/bytesharky/sharkyphp-v2)** | 🔗 **Upstream monorepo** — all packages live under `packages/*`. Development, commits and release tags happen here. |
-| [`sharkyphp/splitter`](https://github.com/sharkyphp/splitter) | The split bot. Hourly cron clones the monorepo, and force-pushes each package into its own repository below. |
-| [`sharkyphp/project`](https://github.com/sharkyphp/project) |  The a empty SharkyPHP project skeleton. `composer create-project sharkyphp/project my-app` |
+| **[`bytesharky/sharkyphp-v2`](https://github.doffish.com/bytesharky/sharkyphp-v2)** | 🔗 **Upstream monorepo** — all packages live under `packages/*`. Development, commits and release tags happen here. |
+| [`sharkyphp/splitter`](https://github.doffish.com/sharkyphp/splitter) | The split bot. Hourly cron clones the monorepo, and force-pushes each package into its own repository below. |
+| [`sharkyphp/project`](https://github.doffish.com/sharkyphp/project) |  The a empty SharkyPHP project skeleton. `composer create-project sharkyphp/project my-app` |
 | `sharkyphp/<package>` | The individual, read-only Composer packages consumed via Packagist. **Never push to these by hand** — they are regenerated on every tag. |
 
 ## Development
 
 All code, issues and pull requests go to the upstream monorepo:
-👉 **https://github.com/bytesharky/sharkyphp-v2**
+👉 **https://github.doffish.com/bytesharky/sharkyphp-v2**
 
 To release a new version, tag `vX.Y.Z` on the monorepo and push; the splitter picks it up automatically (≤ 1 hour) and republishes every package.
 
 ## Documentation
 
 - Official docs site: _(https://docs.sharky.xin)_
-- Packagist: _(register the packages, then link here)_
+- Packagist: _(https://packagist.org/packages/sharkyphp/)_
 
 ## License
 
